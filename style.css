@@ -9,6 +9,7 @@ html {
     font-family: 'Nunito', sans-serif;
     font-weight: normal;
     color: #505050;
+    
 }
 
 
@@ -18,7 +19,7 @@ html {
     grid-template-areas: 
     '. . header'
     '. main .'
-    '. footer .';
+    'footer footer footer';
     
 }
 
@@ -41,7 +42,7 @@ html {
 }
 
 
-.signin-header > button {
+.signin-header > button, button[type="submit"] {
     flex: 1;
     background: #0077C5;
     border-radius: 4px;
@@ -51,13 +52,26 @@ html {
     cursor: pointer;
 }
 
+button[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+    font-size: large;
+    letter-spacing: 2px;
+    
+}
+
 .signin-header > button:hover {
     opacity: 0.8;
 }
 
 
-.signin-header > span > a {
+.signin-header > span > a, .form-headings > a {
     font-size: small;
+    text-decoration: none;
+}
+.form-headings > h1 {
+    margin-bottom: 10px;
 }
 
 .signin-header > span > a:hover {
@@ -68,7 +82,7 @@ html {
 .main {
     grid-column: 1/span 3;
     grid-area: main;
-    height: 80vh;
+    height: auto;
 }
 
 .logo {
@@ -98,20 +112,79 @@ html {
 
 .form-wrapper {
     background: #fff;
-    padding: 30px;
-    border: 1px solid #c7c7c7;
-    border-radius: 2px;
+    padding: 50px;
+    color: #4C4C4C;
+    border-width: 1px 1px 0 1px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-radius: 2px 2px 0 0;
 }
 
 .form-headings {
     text-align: center;
 }
 
+fieldset {
+    border: none;
+    margin-top: 20px;
+}
+
+fieldset > label > input{
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    border: 1px solid #C1C5C8;
+
+    height: 30px;
+    border-radius: 2px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+fieldset > label > input[type='phone']{
+    margin-bottom: 0;
+}
+
+
+.helper-text {
+    font-size: small;
+    margin-bottom: 15px;
+}
+
+.disclaimer, .form-wrapper-footer {
+    font-size: small;
+    text-align: center;
+}
+
+.disclaimer {
+    margin-top: 35px;
+}
+
+.form-wrapper-footer {
+    height: 50px;
+    background-color: #ECEEF1;
+    color: #8d9096;
+    border-width: 0 1px 1px 1px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-radius: 0 0 2px 2px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+
+fieldset > input {
+
+    width: 100%
+}
+
 .footer {
-    grid-column: 1/span 3;
+    grid-column: 3/span 3;
     border: 1px solid black;
     grid-area: footer;
     height: 10vh;
+    text-align: center;
+
 }
 
 .blue {

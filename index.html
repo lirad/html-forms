@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ac0885c8f6.js" crossorigin="anonymous"></script>
@@ -16,13 +17,12 @@
         <header class="header">
             <nav>
                 <div class="signin-header">
-                    <span >
+                    <span>
                         <h5>Already have an Intuit account?</h5>
-                        <a class="blue">I forgot my User ID or Password</a>
+                        <a class="blue" href="#">I forgot my User ID or Password</a>
                     </span>
                     <button>
                         <i class="fas fa-lock"></i>
-                        
                         Sign In
                     </button>
                 </div>
@@ -41,7 +41,8 @@
             <section class="form-wrapper">
                 <div class="form-headings">
                     <h1>Create an Intuit account</h1>
-                    <p>One account for everything Intuit, including Mint. Learn more</p>
+                    <h5>One account for everything Intuit, including Mint. </h5>
+                    <a href="#" class="blue">Learn more</a>
                 </div>
                 <form>
                     <fieldset>
@@ -49,6 +50,7 @@
                             Email address
                             <input type="email" name="email">
                         </label>
+
                         <label>
                             Phone (recommended)
                             <input type="phone" name="phone">
@@ -56,21 +58,29 @@
                                 Standard call, messaging or data rates may apply.
                             </span>
                         </label>
+
                         <label>
                             Password
                             <input type="password" name="password">
                         </label>
                     </fieldset>
-                    <input type="submit" title="Create account" />
+                    
+                    <button type="submit">
+                        <i class="fas fa-lock"></i>
+                        Create Account
+                    </button>
+
+                </form>
                 </form>
                 <div class="disclaimer">
                     By clicking Create account, you agree to our
                     Terms and have read and acknowledge our Privacy Statement.
                 </div>
-                <div class="form-wrapper-footer">
-                    Invisible reCAPTCHA by Google Privacy Policy and Terms of Use.
-                </div>
+
             </section>
+            <div class="form-wrapper-footer">
+                Invisible reCAPTCHA by Google <a class="blue">Privacy Policy and Terms of Use. </a>
+            </div>
         </main>
         <footer class="footer">
             Legal Privacy Security
