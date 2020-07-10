@@ -67,9 +67,44 @@ html {
 
 .main {
     grid-column: 1/span 3;
-    border: 1px solid black;
     grid-area: main;
     height: 80vh;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo > img{
+    height: 40px;
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.brands > img {
+   
+    width: auto;
+    height: 25px;
+  
+}
+
+.form-wrapper {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+}
+
+.form-headings {
+    text-align: center;
 }
 
 .footer {
