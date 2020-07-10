@@ -129,26 +129,32 @@ fieldset {
     margin-top: 20px;
 }
 
-fieldset > label > input{
+fieldset > div > label > input{
     display: block;
     text-align: left;
     margin-bottom: 15px;
     border: 1px solid #C1C5C8;
-
     height: 30px;
     border-radius: 2px;
     width: 100%;
     margin-top: 15px;
 }
 
-fieldset > label > input[type='phone']{
+fieldset > div > label > input[type='phone']{
     margin-bottom: 0;
 }
 
+fieldset > div {
+    margin-top: 30px;
+}
 
 .helper-text {
     font-size: small;
     margin-bottom: 15px;
+}
+
+.submit-btn {
+    margin-top: 15px;
 }
 
 .disclaimer, .form-wrapper-footer {
@@ -180,10 +186,11 @@ fieldset > input {
 
 .footer {
     grid-column: 3/span 3;
-    border: 1px solid black;
+    font-size: small;
     grid-area: footer;
     height: 10vh;
     text-align: center;
+
 
 }
 
