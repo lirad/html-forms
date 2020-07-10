@@ -4,6 +4,14 @@
     padding: 0px;
 }
 
+html {
+    background-color: #ECEEF1;
+    font-family: 'Nunito', sans-serif;
+    font-weight: normal;
+    color: #505050;
+}
+
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -11,18 +19,50 @@
     '. . header'
     '. main .'
     '. footer .';
-    border: 1px solid red;
-    padding: 10px;
-    gap: 5px;
     
 }
 
 
 .header {
     grid-column: 1/span 3;
-    border: 1px solid black;
     grid-area: header;
     height: 10vh;
+}
+
+.signin-header {
+    display: flex;
+    padding: 10px;
+}
+
+.signin-header > span {
+    flex: 3;
+    text-align: right;
+    margin-right: 15px;
+}
+
+
+.signin-header > button {
+    flex: 1;
+    background: #0077C5;
+    border-radius: 4px;
+    border: 1px solid #4c4c4c;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.signin-header > button:hover {
+    opacity: 0.8;
+}
+
+
+.signin-header > span > a {
+    font-size: small;
+}
+
+.signin-header > span > a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .main {
@@ -39,3 +79,6 @@
     height: 10vh;
 }
 
+.blue {
+    color: #0077C5;
+}
