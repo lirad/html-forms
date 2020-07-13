@@ -6,7 +6,7 @@
 
 ![screenshot](./images/screenshot.png)
 
-An HTML and CSS mockup of the mints.com signup page. We used Grid and Flexbox propeties to achieve the same layout and proportions of the original page
+An HTML and CSS mockup of the mints.com signup page. We used Grid and Flexbox CSS properties to achieve the same layout and proportions of the original page
 
 ## Live demo
 
