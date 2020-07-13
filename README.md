@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# HTML Forms
 
 > This project was developed as a learning project part of the Microvese curriculum
 
