@@ -10,7 +10,7 @@ An HTML and CSS mockup of the mints.com signup page. We used Grid and Flexbox pr
 
 ## Live demo
 
-🔗 [Mint's Sign up page](https://raw.githack.com/enkog/Embedding-images-and-videos/develop/index.html)
+🔗 [Mint's Sign up page](https://raw.githack.com/lirad/html-forms/features/index.html)
 
 ## Built With
 
